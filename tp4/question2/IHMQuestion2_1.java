@@ -29,12 +29,14 @@ public class IHMQuestion2_1 extends JFrame {
 
         // à compléter
         // le bouton A a 3 observateurs jbo1, jbo2 et jbo3
-
-        // le bouton B a 2 observateurs jbo1 et jbo2
-
-        // le bouton C a 1 observateur jbo1
-
-      
+        // le bouton B a 2 observateurs jbo1 et jbo2//
+        // le bouton C a 1 observateur jbo1 
+        boutonA.addActionListener(new JButtonObserver("jbo1",contenu));
+        boutonA.addActionListener(new JButtonObserver("jbo2",contenu));
+        boutonA.addActionListener(new JButtonObserver("jbo3",contenu));
+        boutonB.addActionListener(new JButtonObserver("jbo1",contenu));
+        boutonB.addActionListener(new JButtonObserver("jbo2",contenu));
+        boutonC.addActionListener(new JButtonObserver("jbo1",contenu));  
     }
     
     public static void main(String[] args){
